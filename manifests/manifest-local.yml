@@ -1,0 +1,15 @@
+---
+applications:
+- name: edushrava
+  memory: 1G
+  buildpacks:
+  - identity_buildpack
+  - java_buildpack
+  instances: 1
+  path: ../edushrava-app/target/edushrava-app-<version>.jar
+  services:
+  
+  env:
+    JAVA_VERSION: 11+
+    SPRING_PROFILES_ACTIVE: default,dev
+    JAVA_OPTS:

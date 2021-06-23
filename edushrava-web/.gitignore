@@ -1,0 +1,10 @@
+# production
+/build
+/dist
+
+# testing
+/coverage
+test-report.xml
+
+# log files
+*.log*
